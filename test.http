@@ -1,0 +1,30 @@
+### REGISTER USER
+POST http://localhost:5000/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "abc2@test.com",
+  "password": "abcdef",
+  "firstName": "abc",
+  "lastName": "last",
+  "gender": "MALE"
+}
+
+### LOGIN USER
+POST http://localhost:5000/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "abc2@test.com",
+  "password": "abcdefg"
+}
+
+### CHANGE PASSWORD
+PATCH http://localhost:5000/auth/changePassword HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "abc2@test.com",
+  "newPassword": "abcdefg",
+  "oldPassword": "abcdef"
+}

@@ -5,7 +5,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/rmanish12/jenkins-tutorial'
+        git 'https://github.com/rmanish12/jenkins-tutorial.git'
       }
     }
      
